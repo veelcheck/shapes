@@ -1,0 +1,118 @@
+body {
+  display: flex;
+  margin: 0;
+}
+
+.grid {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 400px);
+  gap: 10px;
+}
+
+.box {
+  border: 1px solid black;
+  cursor: pointer;
+}
+
+.one {
+  background-color: grey;
+  height: 300px;
+  position: relative;
+}
+
+.one:hover, .one:active {
+  background-color: #F0CD48;
+
+  & .outter, .innermost, .circle {
+    background-color: #66284A;
+  }
+
+  & .inner {
+    background-color: #F0CD48;
+  }
+}
+
+.one .outter {
+  width: 200px;
+  height: 200px;
+  background-color: rgb(24, 22, 22);
+  position: absolute;
+  bottom: 50px;
+  left: 100px;
+  border-top-left-radius: 50%;
+  border-top-right-radius: 50%;
+}
+
+.one .inner {
+  width: 120px;
+  height: 120px;
+  background-color: grey;
+  position: absolute;
+  bottom: 90px;
+  left: 140px;
+  border-top-left-radius: 50%;
+  border-top-right-radius: 50%;
+}
+
+.one .innermost {
+  width: 40px;
+  height: 60px;
+  background-color: rgb(24, 22, 22);
+  position: absolute;
+  bottom: 90px;
+  left: 180px;
+}
+
+.one .circle {
+  width: 40px;
+  height: 40px;
+  background-color: rgb(24, 22, 22);
+  border-radius: 50%;
+  position: absolute;
+  bottom: 130px;
+  left: 180px;
+}
+
+.two {
+  background-color: grey;
+  height: 300px;
+  position: relative;
+}
+
+.two:hover, .two:active {
+  background-color: #4F77FF;
+  & .shape1, .shape2, .shape3 {
+    background-color: white;
+  }
+}
+
+.shape1 {
+  width: 50px;
+  height: 150px;
+  background-color: rgb(24, 22, 22);
+  position: absolute;
+  bottom: 75px;
+  left: 55px;
+  border-radius: 25px;
+}
+
+.shape2 {
+  width: 100px;
+  height: 150px;
+  background-color: rgb(24, 22, 22);
+  position: absolute;
+  bottom: 75px;
+  left: 125px;
+  border-radius: 50px;
+}
+
+.shape3 {
+  width: 100px;
+  height: 150px;
+  background-color: rgb(24, 22, 22);
+  position: absolute;
+  bottom: 75px;
+  left: 245px;
+  border-radius: 50px;
+}
