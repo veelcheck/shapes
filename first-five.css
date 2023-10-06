@@ -8,6 +8,7 @@ body {
   display: grid;
   grid-template-columns: repeat(auto-fill, 400px);
   gap: 10px;
+  justify-content: center;
 }
 
 .box {
@@ -21,7 +22,7 @@ body {
   position: relative;
 }
 
-.one:hover, .one:active {
+a .one:hover, a .one:focus, a .one:active {
   background-color: #F0CD48;
 
   & .outter, .innermost, .circle {
@@ -80,7 +81,7 @@ body {
   position: relative;
 }
 
-.two:hover, .two:active {
+a .two:hover, a .two:focus, a .two:active {
   background-color: #4F77FF;
   & .shape1, .shape2, .shape3 {
     background-color: white;
