@@ -13,12 +13,14 @@ body {
 
 .box {
   border: 1px solid black;
+  height: 300px;
   cursor: pointer;
 }
 
+/* FIRST SHAPE */
+
 .one {
   background-color: grey;
-  height: 300px;
   position: relative;
 }
 
@@ -75,9 +77,10 @@ a .one:hover, a .one:focus, a .one:active {
   left: 180px;
 }
 
+/* SECOND SHAPE */
+
 .two {
   background-color: grey;
-  height: 300px;
   position: relative;
 }
 
@@ -116,4 +119,112 @@ a .two:hover, a .two:focus, a .two:active {
   bottom: 75px;
   left: 245px;
   border-radius: 50px;
+}
+
+/* THIRD SHAPE */
+
+.three {
+  background-color: grey;
+  position: relative;
+  margin: 0;
+}
+
+a .three:hover, a .three:focus, a .three:active {
+  background-color: #A9C482;
+  & .first-background, .first-helper, .second-background, .second-helper,
+  .middle-square {
+    background-color: #A9C482;
+  }
+  & .first-part, .second-part, .last-part {
+    background-color: #2D696F;
+  }
+}
+
+.first-background {
+  background: grey;
+  width: 42px;
+  height: 130px;
+  left: 50%;
+  transform: translate(-50%);
+  position: absolute;
+}
+
+.first-part {
+  position: absolute;
+  bottom: 0;
+  left: 60px;
+  width: 160px;
+  height: 260px;
+  border-top-left-radius: 80px;
+  border-top-right-radius: 80px;
+  background: black;
+  z-index:  
+}
+
+.first-helper {
+  position: absolute;
+  bottom: 0;
+  left: 100px;
+  width: 80px;
+  height: 220px;
+  border-top-left-radius: 78px;
+  border-top-right-radius: 78px;
+  background: grey;
+}
+
+.second-background {
+  background: grey;
+  width: 42px;
+  height: 140px;
+  left: 50%;
+  bottom: 0;
+  transform: translate(-50%);
+  position: absolute;
+  
+}
+
+.second-part {
+  position: absolute;
+  top: 0;
+  right: 60px;
+  width: 160px;
+  height: 260px;
+  border-top-left-radius: 80px;
+  border-top-right-radius: 80px;
+  background: black;
+  transform: rotate(180deg);
+}
+
+.second-helper {
+  position: absolute;
+  top: 0;
+  right: 100px;
+  width: 80px;
+  height: 220px;
+  border-top-left-radius: 80px;
+  border-top-right-radius: 80px;
+  background: grey;
+  transform: rotate(180deg);
+  
+}
+
+.middle-square {
+  background: grey;
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.last-part {
+  background-color: black;
+  position: absolute;
+  width: 160px;
+  height: 90px;
+  left: 60px;
+  bottom: 170px;
+  border-top-left-radius: 80px;
+  border-top-right-radius: 80px;
 }
