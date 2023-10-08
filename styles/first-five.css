@@ -2,7 +2,7 @@ body {
   display: flex;
   flex-direction: column;
   margin: 0;
-  background-color: rgb(168, 168, 100);
+  background-color: rgb(196, 213, 187);
   color: rgb(10, 39, 8);
 }
 
@@ -19,7 +19,7 @@ body {
   grid-template-columns: repeat(auto-fill, 400px);
   gap: 10px;
   justify-content: center;
-
+  margin-bottom: 1em;
 }
 
 .box {
@@ -292,6 +292,8 @@ a .four:hover, a .four:focus, a .four:active {
   height: 120px;
 }
 
+/* The easiest and quickest way would be to create 4 tiny squares and position them absolute. However, I decided to play with borders this time.*/
+
 .sqr1 {
   top: 0;
   left: -20px;
@@ -314,4 +316,67 @@ a .four:hover, a .four:focus, a .four:active {
   bottom: 0;
   right: -20px;
   border-left: 40px solid grey;
+}
+
+/* FIFTH SHAPE 99.9% match*/
+
+.five {
+  background-color: grey;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+a .five:hover, a .five:focus, a .five:active {
+  background-color: #0D1335;
+  & .dot {
+    background-color: #73C6EA;
+  }
+  & .elipse1 {
+    box-shadow: 0 0 0 10px #FBFAE2;
+  } 
+  & .elipse2 {
+    box-shadow: 0 0 0 9px #4FA07B;
+  } 
+  & .elipse3 {
+    box-shadow: 0 0 0 9px #DC6638;
+  }
+}
+
+.fifth-container {
+  width: 254px;
+  height: 220px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.dot {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: black;
+}
+
+.elipse {
+  position: absolute;
+  border-radius: 50%;
+  height: 230px;
+  width: 90px;
+}
+
+.elipse1 {
+  box-shadow: 0 0 0 10px black;
+  transform: rotate(90deg);    
+}
+
+.elipse2 {
+  box-shadow: 0 0 0 9px black;
+  transform: rotate(30deg);
+}
+
+.elipse3 {
+  box-shadow: 0 0 0 9px black;
+  transform: rotate(-30deg);
 }
