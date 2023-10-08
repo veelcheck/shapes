@@ -1,6 +1,16 @@
 body {
   display: flex;
+  flex-direction: column;
   margin: 0;
+  background-color: rgb(168, 168, 100);
+  color: rgb(10, 39, 8);
+}
+
+.body-container {
+  margin: 1.5em auto;
+  text-align: center;
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 1.5rem;
 }
 
 .grid {
@@ -9,6 +19,7 @@ body {
   grid-template-columns: repeat(auto-fill, 400px);
   gap: 10px;
   justify-content: center;
+
 }
 
 .box {
@@ -131,16 +142,16 @@ a .two:hover, a .two:focus, a .two:active {
 
 a .three:hover, a .three:focus, a .three:active {
   background-color: #A9C482;
-  & .first-background, .first-helper, .second-background, .second-helper,
+  & .left-background, .left-helper, .right-background, .right-helper,
   .middle-square {
     background-color: #A9C482;
   }
-  & .first-part, .second-part, .last-part {
+  & .left-part, .right-part, .last-part {
     background-color: #2D696F;
   }
 }
 
-.first-background {
+.left-background {
   background: grey;
   width: 42px;
   height: 130px;
@@ -149,7 +160,7 @@ a .three:hover, a .three:focus, a .three:active {
   position: absolute;
 }
 
-.first-part {
+.left-part {
   position: absolute;
   bottom: 0;
   left: 60px;
@@ -157,11 +168,10 @@ a .three:hover, a .three:focus, a .three:active {
   height: 260px;
   border-top-left-radius: 80px;
   border-top-right-radius: 80px;
-  background: black;
-  z-index:  
+  background: black;  
 }
 
-.first-helper {
+.left-helper {
   position: absolute;
   bottom: 0;
   left: 100px;
@@ -172,7 +182,7 @@ a .three:hover, a .three:focus, a .three:active {
   background: grey;
 }
 
-.second-background {
+.right-background {
   background: grey;
   width: 42px;
   height: 140px;
@@ -183,10 +193,10 @@ a .three:hover, a .three:focus, a .three:active {
   
 }
 
-.second-part {
+.right-part {
   position: absolute;
   top: 0;
-  right: 60px;
+  right: 58px;
   width: 160px;
   height: 260px;
   border-top-left-radius: 80px;
@@ -195,10 +205,10 @@ a .three:hover, a .three:focus, a .three:active {
   transform: rotate(180deg);
 }
 
-.second-helper {
+.right-helper {
   position: absolute;
   top: 0;
-  right: 100px;
+  right: 98px;
   width: 80px;
   height: 220px;
   border-top-left-radius: 80px;
@@ -211,7 +221,7 @@ a .three:hover, a .three:focus, a .three:active {
 .middle-square {
   background: grey;
   position: absolute;
-  width: 40px;
+  width: 42px;
   height: 40px;
   top: 50%;
   left: 50%;
@@ -227,4 +237,81 @@ a .three:hover, a .three:focus, a .three:active {
   bottom: 170px;
   border-top-left-radius: 80px;
   border-top-right-radius: 80px;
+}
+
+/* FOURTH SHAPE */
+
+.four {
+  background-color: grey;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+a .four:hover, a .four:focus, a .four:active {
+  background-color: #ED6A9D;
+  & .outer-circle {
+    background-color: #050044;
+  }
+  & .inner-circle {
+    background-color: #ED6A9D;
+  }
+  & .sqr1, .sqr2, .sqr3, .sqr4 {
+    border-color: #ED6A9D;
+  }
+}
+
+.four-container {
+  width: 240px;
+  height: 240px;
+  position: relative;
+}
+
+.outer-circle {
+  width: 240px;
+  height: 240px;
+  border-radius: 50%;
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.inner-circle {
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+  left: 40px;
+  top: 40px;
+  background-color: grey;
+}
+
+.square {
+  position: absolute;
+  width: 120px;
+  height: 120px;
+}
+
+.sqr1 {
+  top: 0;
+  left: -20px;
+  border-right: 40px solid grey;
+}
+
+.sqr2 {
+  top: -20px;
+  right: 0;
+  border-bottom: 40px solid grey;
+}
+
+.sqr3 {
+  bottom: -20px;
+  left: 0;
+  border-top: 40px solid grey;
+}
+
+.sqr4 {
+  bottom: 0;
+  right: -20px;
+  border-left: 40px solid grey;
 }
