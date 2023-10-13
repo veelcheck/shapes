@@ -1,7 +1,5 @@
-.six {
-  background-color: grey;
-  position: relative;
-}
+/*SIXTH SHAPE*/
+
 
 a .six:hover, a .six:focus, a .six:active {
   background-color: #73C6EA;
@@ -30,9 +28,87 @@ a .six:hover, a .six:focus, a .six:active {
 }
 
 .six .tria-2 {
-  border-bottom: 140px solid rgb(40, 35, 35);
+  border-bottom: 140px solid rgb(178, 170, 170);
 }
 
 .six .tria-3 {
   border-bottom: 100px solid black;
+}
+
+/* SEVENTH SHAPE */
+
+a .seven:hover, a .seven:focus, a.seven:active {
+  background-color: #F5D6B4;
+
+  & .chess_body--dot-l, 
+    .chess_body--dot-r {
+    background-color: #F5D6B4;
+  }
+  & [class*="chess-"] {
+    background-color: #D86F45;
+  }
+}
+
+.chess_wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+[class*="chess-"] {
+  background-color: black;
+  position: absolute;
+}
+
+.chess-dot {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  top: 48px;
+}
+
+.chess-collar {
+  width: 80px;
+  height: 20px;
+  top: 102px;
+  border-top-left-radius: 21px 21px;
+  border-bottom-left-radius: 39px 39px;
+  border-top-right-radius: 21px 21px;
+  border-bottom-right-radius: 39px 39px;
+}
+
+.chess-body {
+  width: 88px;
+  height: 65px;
+  top: 127px;
+}
+
+.chess_body--dot-r {
+  position: absolute;
+  background-color: grey;
+  width: 152px;
+  height: 152px;
+  border-radius: 50%;
+  top: 59px;
+  left: 30px;
+}
+
+.chess_body--dot-l {
+  position: absolute;
+  background-color: grey;
+  width: 152px;
+  height: 152px;
+  border-radius: 50%;
+  top: 59px;
+  right: 30px;
+}
+
+.chess-feet {
+  width: 140px;
+  height: 40px;
+  bottom: 62px;
+  border-top-left-radius: 25px 15px;
+  border-bottom-left-radius: 10px;
+  border-top-right-radius: 25px 15px;
+  border-bottom-right-radius: 10px;
 }

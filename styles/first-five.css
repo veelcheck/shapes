@@ -1,39 +1,6 @@
-body {
-  display: flex;
-  flex-direction: column;
-  margin: 0;
-  background-color: rgb(196, 213, 187);
-  color: rgb(10, 39, 8);
-}
 
-.body-container {
-  margin: 1.5em auto;
-  text-align: center;
-  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-  font-size: 1.5rem;
-}
-
-.grid {
-  width: 100%;
-  display: grid;
-  grid-template-columns: repeat(auto-fill, 400px);
-  gap: 10px;
-  justify-content: center;
-  margin-bottom: 1em;
-}
-
-.box {
-  border: 1px solid black;
-  height: 300px;
-  cursor: pointer;
-}
 
 /* FIRST SHAPE */
-
-.one {
-  background-color: grey;
-  position: relative;
-}
 
 a .one:hover, a .one:focus, a .one:active {
   background-color: #F0CD48;
@@ -90,10 +57,7 @@ a .one:hover, a .one:focus, a .one:active {
 
 /* SECOND SHAPE */
 
-.two {
-  background-color: grey;
-  position: relative;
-}
+
 
 a .two:hover, a .two:focus, a .two:active {
   background-color: #4F77FF;
@@ -133,12 +97,6 @@ a .two:hover, a .two:focus, a .two:active {
 }
 
 /* THIRD SHAPE */
-
-.three {
-  background-color: grey;
-  position: relative;
-  margin: 0;
-}
 
 a .three:hover, a .three:focus, a .three:active {
   background-color: #A9C482;
@@ -242,7 +200,6 @@ a .three:hover, a .three:focus, a .three:active {
 /* FOURTH SHAPE */
 
 .four {
-  background-color: grey;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -321,7 +278,6 @@ a .four:hover, a .four:focus, a .four:active {
 /* FIFTH SHAPE 99.9% match*/
 
 .five {
-  background-color: grey;
   display: flex;
   justify-content: center;
   align-items: center;
