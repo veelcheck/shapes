@@ -159,5 +159,5 @@ a .eight:hover, a .eight:focus, a.eight:active {
   aspect-ratio: 1;
   transform: rotate(45deg);
   bottom: -65px;
-  left: 20px 
+  left: 20px;
 }
