@@ -1,5 +1,4 @@
 
-
 /* FIRST SHAPE */
 
 a .one:hover, a .one:focus, a .one:active {
@@ -104,97 +103,76 @@ a .three:hover, a .three:focus, a .three:active {
   .middle-square {
     background-color: #A9C482;
   }
-  & .left-part, .right-part, .last-part {
+  & .left-part, .right-part, .left-arch, .right-arch {
     background-color: #2D696F;
   }
 }
-
-.left-background {
-  background: grey;
-  width: 42px;
-  height: 130px;
-  left: 50%;
-  transform: translate(-50%);
+.part {
   position: absolute;
+  width: 40px;
+  height: 185px;
+  background: black;
 }
 
 .left-part {
-  position: absolute;
   bottom: 0;
-  left: 60px;
-  width: 160px;
-  height: 260px;
-  border-top-left-radius: 80px;
-  border-top-right-radius: 80px;
-  background: black;  
+  left: 59px;
 }
 
-.left-helper {
+.right-part {
+  top: 0;
+  right: 59px;
+  transform: rotate(180deg);
+}
+
+.helper {
   position: absolute;
-  bottom: 0;
-  left: 100px;
   width: 80px;
-  height: 220px;
+  height: 90px;
   border-top-left-radius: 78px;
   border-top-right-radius: 78px;
   background: grey;
 }
 
-.right-background {
-  background: grey;
-  width: 42px;
-  height: 140px;
-  left: 50%;
-  bottom: 0;
-  transform: translate(-50%);
-  position: absolute;
-  
-}
-
-.right-part {
-  position: absolute;
-  top: 0;
-  right: 58px;
-  width: 160px;
-  height: 260px;
-  border-top-left-radius: 80px;
-  border-top-right-radius: 80px;
-  background: black;
-  transform: rotate(180deg);
+.left-helper {
+  bottom: 129px;
+  left: 99px;
 }
 
 .right-helper {
+  top: 129px;
+  right: 99px;
+  transform: rotate(180deg);
+}
+
+.arch {
   position: absolute;
-  top: 0;
-  right: 98px;
-  width: 80px;
-  height: 220px;
+  background-color: black;
+  width: 160px;
+  height: 90px;
   border-top-left-radius: 80px;
   border-top-right-radius: 80px;
-  background: grey;
+}
+
+.left-arch {
+  left: 59px;
+  bottom: 170px;
+}
+
+.right-arch {
+  right: 59px;
+  top: 170px;
   transform: rotate(180deg);
-  
 }
 
 .middle-square {
   background: grey;
   position: absolute;
-  width: 42px;
+  width: 40px;
   height: 40px;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-}
-
-.last-part {
-  background-color: black;
-  position: absolute;
-  width: 160px;
-  height: 90px;
-  left: 60px;
-  bottom: 170px;
-  border-top-left-radius: 80px;
-  border-top-right-radius: 80px;
 }
 
 /* FOURTH SHAPE */

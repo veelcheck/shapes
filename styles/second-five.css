@@ -112,3 +112,52 @@ a .seven:hover, a .seven:focus, a.seven:active {
   border-top-right-radius: 25px 15px;
   border-bottom-right-radius: 10px;
 }
+
+/* EIGHTH SHAPE */
+a .eight:hover, a .eight:focus, a.eight:active {
+  background: #F3EAD2;
+  & .circle8, .square8 {
+    border: 30px solid #42A5F5;
+  }
+  & .bar8 {
+    background: #42A5F5;
+  }
+}
+
+.eight {
+  background: grey;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.circle8,
+.square8 {
+  border: 30px solid black;
+  background: transparent;
+}
+
+.circle8 {
+  width: 190px;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+}
+
+.bar8 {
+  width: 30px;
+  height: 190px;
+  background: black;
+}
+
+.square8 {
+  position: absolute;
+  width: 90px;
+  aspect-ratio: 1;
+  transform: rotate(45deg);
+  bottom: -65px;
+  left: 20px 
+}
