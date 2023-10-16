@@ -161,3 +161,66 @@ a .eight:hover, a .eight:focus, a.eight:active {
   bottom: -65px;
   left: 20px;
 }
+
+/* NINTH SHAPE */
+
+a .nine:hover, a .nine:focus, a.nine:active {
+  background: #784972;
+  & .absolute {
+    background: #F7FFCF;
+  }
+  & [class*="pumpkin"] {
+    border: 10px solid #784972;
+  }
+}
+
+.nine {
+  background: grey;
+}
+
+
+.absolute {
+  position: absolute;
+  background: black;
+}
+
+[class*="pumpkin"] {
+  border: 10px solid grey;
+  width: 102px;
+  height: 150px;
+  border-radius: 50%;
+}
+
+.pumpkin-left-out {
+  bottom: 31px;
+  left: 51px;
+}
+
+.pumpkin-right-out {
+  bottom: 31px;
+  right: 51px;
+}
+
+.pumpkin-left-inn {
+  left: 91px;
+  bottom: 31px;
+}
+
+.pumpkin-right-inn {
+  right: 91px;
+  bottom: 31px;
+}
+
+.pumpkin-middle {
+  left: 132px;
+  bottom: 32px;
+}
+
+.stem {
+  width: 22px;
+  height: 54px;
+  top: -51px;
+  left: 39px;
+  border-top-left-radius: 25px;
+  border-top-right-radius: 25px;
+}

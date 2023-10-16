@@ -25,7 +25,7 @@ body {
 .box {
   border: 1px solid black;
   height: 300px;
-  cursor: pointer;
+  cursor: crosshair;
   position: relative;
   background-color: grey;
 }
