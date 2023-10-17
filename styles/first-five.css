@@ -7,7 +7,6 @@ a .one:hover, a .one:focus, a .one:active {
   & .outter, .innermost, .circle {
     background-color: #66284A;
   }
-
   & .inner {
     background-color: #F0CD48;
   }
@@ -55,8 +54,6 @@ a .one:hover, a .one:focus, a .one:active {
 }
 
 /* SECOND SHAPE */
-
-
 
 a .two:hover, a .two:focus, a .two:active {
   background-color: #4F77FF;

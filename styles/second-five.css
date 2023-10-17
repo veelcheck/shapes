@@ -125,7 +125,6 @@ a .eight:hover, a .eight:focus, a.eight:active {
 }
 
 .eight {
-  background: grey;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -174,11 +173,6 @@ a .nine:hover, a .nine:focus, a.nine:active {
   }
 }
 
-.nine {
-  background: grey;
-}
-
-
 .absolute {
   position: absolute;
   background: black;
@@ -223,4 +217,60 @@ a .nine:hover, a .nine:focus, a.nine:active {
   left: 39px;
   border-top-left-radius: 25px;
   border-top-right-radius: 25px;
+}
+
+/* TENTH SHAPE */
+
+a .ten:hover, a .ten:focus, a.ten:active {
+  background: #EFEB99;
+
+  & .a, .bar-ten {
+    background: #8647E6;
+  }
+}
+
+.ten {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container-ten {
+  transform: rotate(45deg);
+  width: 220px;
+  aspect-ratio: 1;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+}
+
+.a {
+  background: black;
+  width: 30px;
+  border-radius: 50%;
+  aspect-ratio: 1;
+}
+
+.wrap-ten-2 {
+  display: flex;
+  margin-top: -190px;
+}
+
+.wrap-ten-3 {
+  display: flex;
+  margin-bottom: -190px;
+  margin-left: -110px;
+}
+
+.bar-ten {
+  position: absolute;
+  background: black;
+  width: 30px;
+  height: 190px;
+  left: 95px;
+}
+
+.bar-ten-2 {
+  transform: rotate(90deg);
 }
