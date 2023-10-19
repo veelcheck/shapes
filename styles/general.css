@@ -1,9 +1,24 @@
+:root {
+  --font-clr:  rgb(10, 39, 8);
+  --bg-clr: rgb(245, 234, 109, 80%);
+  --anchor-clr: rgb(255, 0, 30);
+  --border-clr: black;
+}
+
+[data-theme="dark"] {
+  --font-clr: white;
+  --bg-clr: rgb(29, 13, 58);
+  --anchor-clr: yellow;
+  --border-clr: var(--anchor-clr);
+}
+
+
 body {
   display: flex;
   flex-direction: column;
   margin: 0;
-  background-color: rgb(245, 234, 109, 80%);
-  color: rgb(10, 39, 8);
+  background-color: var(--bg-clr);
+  color: var(--font-clr);
 }
 
 .body-container {
@@ -11,6 +26,70 @@ body {
   text-align: center;
   font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   font-size: 1.5rem;
+  max-width: 1200px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+p {
+  max-width: 80ch;
+  padding-right: 2em;
+}
+
+
+.theme-switch {
+  display: inline-block;
+  height: 34px;
+  position: relative;
+  width: 60px;
+}
+
+.theme-switch input {
+  display:none;
+}
+
+.slider {
+  background-color: white;
+  border: 1px solid var(--font-clr);
+  bottom: 0;
+  cursor: pointer;
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  transition: .4s;
+}
+
+.slider:before {
+  background-color: var(--font-clr);
+  bottom: 4px;
+  content: "";
+  height: 26px;
+  left: 4px;
+  position: absolute;
+  transition: .4s;
+  width: 26px;
+}
+
+input:checked + .slider {
+background-color: #2b2b2b;
+}
+
+input:checked + .slider:before {
+transform: translateX(26px);
+}
+
+.slider.round {
+border-radius: 34px;
+}
+
+.slider.round:before {
+border-radius: 50%;
+}
+
+.css-battle:visited {
+  color: var(--anchor-clr);
 }
 
 .grid {
@@ -23,7 +102,7 @@ body {
 }
 
 .box {
-  border: 1px solid black;
+  border: 1px solid var(--border-clr);
   height: 300px;
   cursor: crosshair;
   position: relative;
