@@ -162,7 +162,7 @@ a .eight:hover, a .eight:focus, a.eight:active {
   border-radius: 50%;
   position: relative;
   overflow: clip;
-  overflow-clip-margin: 1px;
+  overflow-clip-margin: 1px; /* Chrome only */
   display: flex;
   justify-content: center;
 }
