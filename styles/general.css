@@ -1,7 +1,7 @@
 :root {
   --font-clr:  rgb(10, 39, 8);
-  --bg-clr: rgb(245, 234, 109, 80%);
-  --anchor-clr: rgb(255, 0, 30);
+  --bg-clr: rgba(182, 209, 216, 0.8);
+  --anchor-clr: rgb(26, 131, 87);
   --border-clr: black;
 }
 
@@ -38,6 +38,16 @@ p {
   padding-right: 2em;
 }
 
+.number {
+  position: absolute;
+  top: -40px;
+  left: 16px;
+  color: white;
+  font-family:'Yuji Hentaigana Akari', cursive;
+  font-size: 3rem;
+  
+}
+
 
 .theme-switch {
   display: inline-block;
@@ -51,7 +61,7 @@ p {
 }
 
 .slider {
-  background-color: white;
+  background-color: grey;
   border: 1px solid var(--font-clr);
   bottom: 0;
   cursor: pointer;
@@ -74,7 +84,7 @@ p {
 }
 
 input:checked + .slider {
-background-color: #2b2b2b;
+background-color: white;
 }
 
 input:checked + .slider:before {

@@ -1,14 +1,19 @@
 /* ELEVENTH SHAPE */
 
 a .eleven:hover, a .eleven:focus, a.eleven:active {
-  background: #F6E49C;
+  --bg-clr: #F6E49C;
+  --detail-clr: #2F5C24;
+
+  background: var(--bg-clr);
 
   & .b11 {
-    background: #2F5C24;
+    background: var(--detail-clr);
   }
-
   & .a11, .c11 {
-    border-color: #2F5C24;
+    border-color: var(--detail-clr);
+  }
+  & .number {
+    color: var(--detail-clr);
   }
 }
 

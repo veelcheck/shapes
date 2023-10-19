@@ -1,16 +1,23 @@
 /*SIXTH SHAPE*/
 
-
 a .six:hover, a .six:focus, a .six:active {
-  background-color: #73C6EA;
+  --bg-clr: #73C6EA;
+  --detail-blue: #0D1335;
+  --detail-orange: #DC6638;
+  --detail-light: #FBFAE2;
+
+  background-color: var(--bg-clr);
   & .tria-1 {
-    border-bottom-color:#0D1335;
+    border-bottom-color: var(--detail-blue);
   }
   & .tria-2 {
-    border-bottom-color:#DC6638;
+    border-bottom-color: var(--detail-orange);
   }
   & .tria-3 {
-    border-bottom-color:#FBFAE2;
+    border-bottom-color: var(--detail-light);
+  }
+  & .number {
+    color: var(--detail-blue);
   }
 }
 
@@ -38,14 +45,21 @@ a .six:hover, a .six:focus, a .six:active {
 /* SEVENTH SHAPE */
 
 a .seven:hover, a .seven:focus, a.seven:active {
-  background-color: #F5D6B4;
+  --bg-clr: #F5D6B4;
+  --detail-clr: #D86F45;
+
+  background-color: var(--bg-clr);
 
   & .chess_body--dot-l, 
     .chess_body--dot-r {
-    background-color: #F5D6B4;
+    background-color: var(--bg-clr);
   }
   & [class*="chess-"] {
-    background-color: #D86F45;
+    background-color: var(--detail-clr);
+  }
+
+  & .number {
+    color: var(--detail-clr);
   }
 }
 
@@ -115,12 +129,18 @@ a .seven:hover, a .seven:focus, a.seven:active {
 
 /* EIGHTH SHAPE */
 a .eight:hover, a .eight:focus, a.eight:active {
-  background: #F3EAD2;
+  --bg-clr: #F3EAD2;
+  --detail-clr: #42A5F5;
+
+  background: var(--bg-clr);
   & .circle8, .square8 {
-    border-color: #42A5F5;
+    border-color: var(--detail-clr);
   }
   & .bar8 {
-    background: #42A5F5;
+    background:var(--detail-clr);
+  }
+  & .number {
+    color: var(--detail-clr);
   }
 }
 
@@ -141,7 +161,8 @@ a .eight:hover, a .eight:focus, a.eight:active {
   aspect-ratio: 1;
   border-radius: 50%;
   position: relative;
-  overflow: hidden;
+  overflow: clip;
+  overflow-clip-margin: 1px;
   display: flex;
   justify-content: center;
 }
@@ -164,12 +185,18 @@ a .eight:hover, a .eight:focus, a.eight:active {
 /* NINTH SHAPE */
 
 a .nine:hover, a .nine:focus, a.nine:active {
-  background: #784972;
+  --bg-clr: #784972;
+  --detail-clr: #F7FFCF;
+
+  background: var(--bg-clr);
   & .absolute {
-    background: #F7FFCF;
+    background: var(--detail-clr);
   }
   & [class*="pumpkin"] {
-    border-color: #784972;
+    border-color: var(--bg-clr);
+  }
+  & .number {
+    color: var(--detail-clr);
   }
 }
 
@@ -222,10 +249,16 @@ a .nine:hover, a .nine:focus, a.nine:active {
 /* TENTH SHAPE */
 
 a .ten:hover, a .ten:focus, a.ten:active {
-  background: #EFEB99;
+  --bg-clr: #EFEB99;
+  --detail-clr: #8647E6;
+
+  background: var(--bg-clr);
 
   & .a, .bar-ten {
-    background: #8647E6;
+    background: var(--detail-clr);
+  }
+  & .number {
+    color: var(--detail-clr);
   }
 }
 

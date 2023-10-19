@@ -2,13 +2,19 @@
 /* FIRST SHAPE */
 
 a .one:hover, a .one:focus, a .one:active {
-  background-color: #F0CD48;
+  --bg-clr: #F0CD48;
+  --detail-clr: #66284A;
+
+  background-color: var(--bg-clr);
 
   & .outter, .innermost, .circle {
-    background-color: #66284A;
+    background-color: var(--detail-clr)
   }
   & .inner {
-    background-color: #F0CD48;
+    background-color: var(--bg-clr);
+  }
+  & .number {
+    color: var(--detail-clr)
   }
 }
 
@@ -95,14 +101,21 @@ a .two:hover, a .two:focus, a .two:active {
 /* THIRD SHAPE */
 
 a .three:hover, a .three:focus, a .three:active {
-  background-color: #A9C482;
+  --bg-clr: #A9C482;
+  --detail-clr: #2D696F;
+
+  background-color: var(--bg-clr);
   & .left-background, .left-helper, .right-background, .right-helper,
   .middle-square {
-    background-color: #A9C482;
+    background-color: var(--bg-clr);
   }
   & .left-part, .right-part, .left-arch, .right-arch {
-    background-color: #2D696F;
+    background-color: var(--detail-clr);
   }
+  & .number {
+    color: var(--detail-clr);
+  }
+
 }
 .part {
   position: absolute;
@@ -181,15 +194,21 @@ a .three:hover, a .three:focus, a .three:active {
 }
 
 a .four:hover, a .four:focus, a .four:active {
-  background-color: #ED6A9D;
+  --bg-clr: #ED6A9D;
+  --detail-clr: #050044;
+
+  background-color: var(--bg-clr);
   & .outer-circle {
-    background-color: #050044;
+    background-color: var(--detail-clr);
   }
   & .inner-circle {
-    background-color: #ED6A9D;
+    background-color: var(--bg-clr);
   }
   & .sqr1, .sqr2, .sqr3, .sqr4 {
-    border-color: #ED6A9D;
+    border-color: var(--bg-clr);
+  }
+  & .number {
+    color: var(--detail-clr);
   }
 }
 
@@ -259,18 +278,27 @@ a .four:hover, a .four:focus, a .four:active {
 }
 
 a .five:hover, a .five:focus, a .five:active {
-  background-color: #0D1335;
+  --bg-clr: #0D1335;
+  --detail-blue: #73C6EA;
+  --detail-light: #FBFAE2;
+  --detail-green:  #4FA07B;
+  --detail-orange: #DC6638;
+
+  background-color: var(--bg-clr);
   & .dot {
-    background-color: #73C6EA;
+    background-color: var(--detail-blue);
   }
   & .elipse1 {
-    box-shadow: 0 0 0 10px #FBFAE2;
+    box-shadow: 0 0 0 10px var(--detail-light);
   } 
   & .elipse2 {
-    box-shadow: 0 0 0 9px #4FA07B;
+    box-shadow: 0 0 0 9px var(--detail-green);
   } 
   & .elipse3 {
-    box-shadow: 0 0 0 9px #DC6638;
+    box-shadow: 0 0 0 9px var(--detail-orange);
+  }
+  & .number {
+    color: var(--detail-light);
   }
 }
 
