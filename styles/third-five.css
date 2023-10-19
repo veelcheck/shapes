@@ -1,0 +1,44 @@
+/* ELEVENTH SHAPE */
+
+a .eleven:hover, a .eleven:focus, a.eleven:active {
+  background: #F6E49C;
+
+  & .b11 {
+    background: #2F5C24;
+  }
+
+  & .a11, .c11 {
+    border-color: #2F5C24;
+  }
+}
+
+.eleven {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container-eleven {
+  display: flex;
+}
+
+.square11 {
+  height: 40px;
+}
+
+.a11 {
+  border: 40px solid black;
+  border-left: transparent;
+  width: 80px;
+}
+
+.b11 {
+  width: 40px;
+  background: black;
+  margin-top: 40px;
+}
+
+.c11 {
+  border: 40px solid black;
+  width: 40px;
+}

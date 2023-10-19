@@ -4,13 +4,13 @@
 a .six:hover, a .six:focus, a .six:active {
   background-color: #73C6EA;
   & .tria-1 {
-    border-bottom: 180px solid #0D1335;
+    border-bottom-color:#0D1335;
   }
   & .tria-2 {
-    border-bottom: 140px solid #DC6638;
+    border-bottom-color:#DC6638;
   }
   & .tria-3 {
-    border-bottom: 100px solid #FBFAE2;
+    border-bottom-color:#FBFAE2;
   }
 }
 
@@ -117,7 +117,7 @@ a .seven:hover, a .seven:focus, a.seven:active {
 a .eight:hover, a .eight:focus, a.eight:active {
   background: #F3EAD2;
   & .circle8, .square8 {
-    border: 30px solid #42A5F5;
+    border-color: #42A5F5;
   }
   & .bar8 {
     background: #42A5F5;
@@ -169,7 +169,7 @@ a .nine:hover, a .nine:focus, a.nine:active {
     background: #F7FFCF;
   }
   & [class*="pumpkin"] {
-    border: 10px solid #784972;
+    border-color: #784972;
   }
 }
 
