@@ -1,14 +1,14 @@
 :root {
-  --font-clr:  rgb(10, 39, 8);
-  --bg-clr: rgba(231, 110, 62, 0.219);
-  --anchor-clr: rgb(26, 131, 87);
+  --font-clr:  white;
+  --bg-clr: rgb(29, 13, 58);
+  --anchor-clr: yellow;
   --border-clr: black;
 }
 
-[data-theme="dark"] {
-  --font-clr: white;
-  --bg-clr: rgb(29, 13, 58);
-  --anchor-clr: yellow;
+[data-theme="light"] {
+  --font-clr: rgb(10, 39, 8);
+  --bg-clr: rgba(231, 110, 62, 0.219);
+  --anchor-clr: rgb(26, 131, 87);
   --border-clr: var(--anchor-clr);
 }
 
