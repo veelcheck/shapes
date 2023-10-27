@@ -47,3 +47,50 @@ a .eleven:hover, a .eleven:focus, a.eleven:active {
   border: 40px solid black;
   width: 40px;
 }
+
+/* TWELFTH SHAPE */
+
+a .twelve:hover, a .twelve:focus, a.twelve:active {
+  --bg-clr: #CBE8DD;
+  --detail-clr: #007192;
+
+  background: var(--bg-clr);
+
+  & .triangle-bg12,
+    .triangle-sm12 {
+      border-bottom-color: var(--detail-clr);
+  }
+
+  & .number {
+      color: var(--detail-clr);
+  }
+}
+
+.twelve {
+  display: flex;  
+  justify-content: center;
+  align-items: center;
+}
+
+.container-12 {
+  width: 250px;
+  height: 140px;
+  z-index: 1;
+  display: flex;
+  justify-content: space-between;
+}
+
+.triangle-bg12 {
+  border-left: 125px solid transparent;
+  border-right: 125px solid transparent;
+  border-bottom: 140px solid black;
+  inset: 50%;
+  position: absolute;
+  transform: translate(-50%, -50%);
+}
+
+.triangle-sm12 {
+  border-left: 62px solid transparent;
+  border-right: 62px solid transparent;
+  border-bottom: 100px solid black;
+}
