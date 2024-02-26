@@ -7,7 +7,7 @@
 
 [data-theme="light"] {
   --font-clr: rgb(10, 39, 8);
-  --bg-clr: rgba(231, 110, 62, 0.219);
+  --bg-clr: #CCFFCB;
   --anchor-clr: rgb(26, 131, 87);
   --border-clr: var(--anchor-clr);
 }

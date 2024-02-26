@@ -56,12 +56,12 @@ a .twelve:hover, a .twelve:focus, a.twelve:active {
 
   background: var(--bg-clr);
 
-  & .triangle-bg12,
-    .triangle-sm12 {
+   .triangle-bg12,
+   .triangle-sm12 {
       border-bottom-color: var(--detail-clr);
   }
 
-  & .number {
+   .number {
       color: var(--detail-clr);
   }
 }
